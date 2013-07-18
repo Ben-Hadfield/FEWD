@@ -19,5 +19,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	font: italic bold 12px/30px verdana,serif;
 }
 	

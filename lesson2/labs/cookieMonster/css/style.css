@@ -8,7 +8,7 @@ Developed @ General Assembly in NYC
 */
 
 body {
-	background: url('../images/3-scene.jpg');
+	background: url('../images/cookie-monster.jpg');
 	/* set up a background image */
 	
 	
@@ -20,6 +20,41 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 
-	font: italic bold 12px/30px verdana,serif;
+}
+
+h1 {font-size: 72px;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+}
+
+a {
+	color: #4CBCD0;
+	font-size: 18px;
+	font-weight: bold;
 }
 	
+#container {background-color: #000000;
+			margin: 0 30px;
+			margin-left: 0;
+			width:500px;
+			padding: 10px;
+			font-family: verdana;
+			font-size: 16;
+			color: white;
+			border-bottom-right-radius: 10px;
+
+}
+
+#h2 {
+}
+
+h2 {background-color: #4CBCD0;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+
+
+
+}

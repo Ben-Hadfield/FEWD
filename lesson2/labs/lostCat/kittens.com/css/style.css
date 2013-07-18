@@ -1,3 +1,4 @@
+
 /* 
 
 Project: Lost Cat Exercise
@@ -10,8 +11,24 @@ Author: General Assembly & Chris Castiglione
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 18px;
 	line-height: 1.1;
-	color: #000000; 
+	color: #400096; 
      padding: 40px;
+     text-align: center;
+
 }
+
+
+p {font-family: comic;
+	font-size: 24px	
+
+}
+
+#header {background-color: yellow;
+
+}
+
+#main {background-color: orange;
+
+};

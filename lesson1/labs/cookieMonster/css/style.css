@@ -8,6 +8,7 @@ Developed @ General Assembly in NYC
 */
 
 body {
+	background: url('../images/3-scene.jpg');
 	/* set up a background image */
 	
 	
@@ -19,3 +20,4 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
+	

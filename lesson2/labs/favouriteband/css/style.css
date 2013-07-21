@@ -1,0 +1,106 @@
+/* 
+
+Project Name: Knifeparty 
+Client: Knifeparty
+Author: Ben Hadfield 
+Developed @ home in bed
+
+*/
+
+
+
+body {background: url('../images/dh-1.jpg'); /*How about different backgrounds for different pages?*/
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h2 {background-color: #1192ED;
+	text-align: center;
+	padding: 20px;
+	color: black;
+	font-style: normal;
+	border-radius: 5px;
+
+}
+
+#map_canvas {
+        	width: 500px;
+        	height: 400px;
+      		background-color: #CCC;
+      		margin: 0 auto;
+
+}
+
+#link1 {background-color: #1192ED;
+	text-align: center;
+	padding: 5px;
+	color: black;
+	width: 150px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 20px;
+	border-radius: 10px;
+
+}
+
+/* There must be an easier way than this. I am struggling to have the two divs sit next to each other at even distances from each other and the end of parent div.
+
+*/
+
+#link2 {background-color: #1192ED;
+	text-align: center;
+	padding: 5px;
+	color: black;
+	width: 150px;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	float: right;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+#external {margin-top: 175px
+
+}
+
+/* why does the margin not seem to be set based on link1 and 2 divs above? especially in indes.html
+
+*/
+	
+.container {background-color: #000000;
+			margin: 0, 0;
+			margin-left: 1000px; /* there must be better ways for me to push the div to the other side of the screen... */
+			width:550px;
+			position: absolute;
+			height:100%;
+			padding: 10px;
+			font-family: courier;
+			font-size: 18px;
+			color: white;
+			border-bottom-right-radius: 10px;
+
+}
+
+#container2 {background-color: #1192ED;
+			margin-top: 50px;
+			margin-bottom: auto;
+			margin-left: 100px;
+			border-radius: 25px;
+			text-align: center;
+			position: absolute;  /* why without this changes to this container will influence the original container? */
+			font-family: courier;
+			font: normal;
+			color: black;
+
+
+
+}
+
+

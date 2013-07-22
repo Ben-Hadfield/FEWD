@@ -46,6 +46,7 @@ h2 {background-color: #1192ED;
 	margin-right: 50px;
 	font-size: 20px;
 	border-radius: 10px;
+	opacity: 0.7;
 
 }
 
@@ -64,6 +65,7 @@ h2 {background-color: #1192ED;
 	float: right;
 	font-size: 20px;
 	border-radius: 10px;
+	opacity: 0.7;
 }
 
 #external {margin-top: 175px
@@ -78,12 +80,13 @@ h2 {background-color: #1192ED;
 			margin: 0, 0;
 			margin-left: 1000px; /* there must be better ways for me to push the div to the other side of the screen... */
 			width:550px;
-			position: absolute;
+			position: relative;
 			height:100%;
 			padding: 10px;
 			font-family: courier;
 			font-size: 18px;
 			color: white;
+			opacity: 0.8;
 			border-bottom-right-radius: 10px;
 
 }
@@ -99,8 +102,11 @@ h2 {background-color: #1192ED;
 			font: normal;
 			color: black;
 
-
-
 }
 
+a: {color: black;}
+a:hover {background-color: red;
+		font-size: 20px;
+
+}
 

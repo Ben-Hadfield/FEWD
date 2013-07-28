@@ -26,5 +26,54 @@ Developer @GA in NYC
 	clear: both;
 }
 
+body {background: url("../images/background.jpg");
+     background-repeat: repeat-x;
+     background-color: #d6d6d6;
+     color: #000000;  
+     font-family: 'Armata', serif;   
+}
 
 
+h1 {
+  height: 213px;
+  width: 216px;
+  display: block;
+  background: url("../images/logo.png");
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 15px auto 30px;
+}
+
+h2 {font-size: 20px;
+     font-weight: bold;
+}
+
+#image {float: left;
+     border-radius: 5px;
+     margin-right: 10px;
+}
+
+#para {font-size: 12px;
+
+}
+
+.ecard {background-color: white;
+     margin: 0 auto;
+     width: 940px;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     box-shadow: 1px 1px 30px #ccc;
+
+}
+
+a:link {color: #cc6633;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+a:visited {color: #cc6633;
+     font-weight: bold;
+     text-decoration: none;
+}

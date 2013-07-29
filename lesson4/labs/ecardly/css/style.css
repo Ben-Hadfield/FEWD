@@ -54,14 +54,15 @@ h2 {font-size: 20px;
      margin-right: 10px;
 }
 
-#para {font-size: 12px;
+#para {font-size: 14px;
+  text-align: justify;
 
 }
 
 .ecard {background-color: white;
      margin: 0 auto;
      width: 940px;
-     padding: 10px;
+     padding: 10px 20px 20px 20px;
      border-radius: 5px;
      border: 1px solid #ccc;
      box-shadow: 1px 1px 30px #ccc;

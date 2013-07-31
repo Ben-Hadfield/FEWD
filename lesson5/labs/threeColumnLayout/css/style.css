@@ -61,13 +61,17 @@ body {
 #container {
 	width: 960px;
 	margin: auto;
+     height: 500px;
+     background-color: green;
 }
 
-header {
+header {width: 960px;
+     margin: auto;
 
 }
 
-footer {
+footer {width: 960px;
+     margin: auto;
 
 }
 
@@ -75,6 +79,33 @@ footer {
 /* ADDITIONAL STYLES                   
 /*******************************************/
 
+#sidebar-left {
+     width:220px;
+     height: 400px;
+     background:aqua;
+     padding:10px;
+     border:1px solid black;
+     word-wrap: break-word;
+}
+
+#sidebar-right {
+     width: 220px;
+     height: 400px;
+     background: gray;
+     padding:10px;
+     border:1px solid black;
+     word-wrap: break-word;
+}
+
+#content {
+     width:520px;
+     height: 400px;
+     background:pink;
+     padding:10px;
+     border:1px solid black;
+     word-wrap: break-word;
+
+}
 
 
 

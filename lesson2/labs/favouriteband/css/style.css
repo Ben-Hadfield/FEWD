@@ -27,7 +27,7 @@ Developed @ home in bed
 body {background: url("../images/background.png");
      background-repeat: repeat;
      background-color: white; 
-     font-family: 'Ropa Sans', 'Euphoria Script', serif;
+     font-family: 'Ropa Sans', 'Euphoria Script', Serif;
      color: black;   
 }
 h1 {

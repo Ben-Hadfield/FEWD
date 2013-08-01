@@ -45,8 +45,7 @@ h1 {
 .container {
   	margin: 0 auto 80px auto;
   	width: 1000px;
-  	opacity: 0.9;
-  	background: #fede00;
+  	background: rgba(254, 222, 0, 0.8);
 
 }
 

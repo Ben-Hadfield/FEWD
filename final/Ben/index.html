@@ -8,37 +8,81 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-
   </head>
   <body>
     <header class = "clearfix">
-        <h1>Scrooge.hk</h1>
+      <div class="clearfix"> 
+        <h1 class="floatleft clearfix">Scrooge.hk</h1>
+        <form>
+          <input type="text" value="Username" name="Username">
+          <input type="password" value="Password" name="pwd">
+        </form>
+           
       <!-- Login and sign up feature needed, how to implement?-->
-        <nav>
-          <div class="Location clearfix">
-            <ul>
-              <li><a href="#">Central</a></li>
-              <li><a href="#">Wanchai</a></li>
-              <li><a href="#">Eastern</a></li>
-              <li><a href="#">Southern</a></li>
-              <li><a href="#">Yau Tsim Mong</a></li>
-              <li><a href="#">Kowloon City</a></li>
-              <li><a href="#">Kwun Tong</a></li>
-              <li><a href="#">New Territories</a></li>
-            </ul>
-            <select class="clearfix">
-              <option value="" selected="selected">Select</option>
+        <nav class="clearfix">
+          <div class="location clearfix">
+            <select class="locationlarge">
+              <option value="" selected="selected">Hong Kong Island</option>
               <option value="#">Central</option>
               <option value="#">Wanchai</option>
+              <option value="#">North Point</option>
               <option value="#">Eastern</option>
+              <option value="#">Kennedy Town</option>
+              <option value="#">Aberdeen</option>
               <option value="#">Southern</option>
-              <option value="#">Yau Tsim Mong</option>
-              <option value="#">Kowloon City</option>
-              <option value="#">Kwun Tong</option>
-              <option value="#">New Territiories</option>
             </select>
+            <select class="locationlarge">
+              <option value="" selected="selected">Kowloon</option>
+              <option value="#">Tsim Sha Tsui</option>
+              <option value="#">Yau Ma Tei</option>
+              <option value="#">Mong Kok</option>
+              <option value="#">Kowloon City</option>
+              <option value="#">Sham Shui Po</option>
+              <option value="#">Wong Tai Sin</option>
+              <option value="#">Kwun Tong</option>
+            </select>
+            <select class="locationlarge">
+              <option value="" selected="selected">New Territories</option>
+              <option value="#">Islands</option>
+              <option value="#">Kwai Tsing</option>
+              <option value="#">North</option>
+              <option value="#">Sai Kung</option>
+              <option value="#">Tai Po</option>
+              <option value="#">Tsuen Wan</option>
+              <option value="#">Tuen Mun</option>
+              <option value="#">Yuen Long</option>
+            </select>
+            <select class="locationmobile">
+              <option value="" selected="selected">Location</option>
+              <option value="#">==HONG KONG ISLAND==</option>
+              <option value="#">Central</option>
+              <option value="#">Wanchai</option>
+              <option value="#">North Point</option>
+              <option value="#">Eastern</option>
+              <option value="#">Kennedy Town</option>
+              <option value="#">Aberdeen</option>
+              <option value="#">Southern</option>
+              <option value="#">==KOWLOON==</option>
+              <option value="#">Tsim Sha Tsui</option>
+              <option value="#">Yau Ma Tei</option>
+              <option value="#">Mong Kok</option>
+              <option value="#">Kowloon City</option>
+              <option value="#">Sham Shui Po</option>
+              <option value="#">Wong Tai Sin</option>
+              <option value="#">Kwun Tong</option>
+              <option value="#">==NEW TERRITORIES==</option>
+              <option value="#">Islands</option>
+              <option value="#">Kwai Tsing</option>
+              <option value="#">North</option>
+              <option value="#">Sai Kung</option>
+              <option value="#">Tai Po</option>
+              <option value="#">Tsuen Wan</option>
+              <option value="#">Tuen Mun</option>
+              <option value="#">Yuen Long</option>
+            </select>
+
           </div>
-          <div class="Category clearfix">
+          <div class="category clearfix">
             <ul>
               <li><a href="#">Dining</a></li>
               <li><a href="#">Nightlife</a></li>
@@ -49,8 +93,8 @@
               <li><a href="#">Meet Ups</a></li>
               <li><a href="#">Other</a></li>
             </ul>
-            <select>
-              <option value="" selected="selected">Select</option>
+            <select class="clearfix floatleft">
+              <option value="" selected="selected">Category</option>
               <option value="#">Dining</option>
               <option value="#">Nightlife</option>
               <option value="#">Shopping</option>
@@ -62,23 +106,178 @@
             </select>
           </div>
         </nav>
+    </div> 
   </header>
     <div class="container clearfix"> 
       <h1>MONDAY AUGUST 12</h1>
       <div class="content" id="one">
-        <img src="images/img1.jpg">
-        <img src="images/img5.jpg">
-        <img src="images/img4.jpg">
-        <img src="images/img6.jpg">
+        <div class="midi clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="promopic">
+            <img src="images/carnegiespromopic.jpg">
+          </div>
+          <div class="foot">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
       </div>
+      <div class="mini clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+      </div>
+        <div class="mini clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+        </div>
+    </div>
       <div class="content" id="two">
-        <img src="images/img4.jpg">
-        <img src="images/img3.jpg">
-        <img src="images/img1.jpg">
+        <div class="mini clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+        </div>
+        <div class="midi clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="promopic">
+            <img src="images/carnegiespromopic.jpg">
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+      </div>
+        <div class="mini clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+        </div>        
       </div>
       <div class="content" id="three">
-        <img src="images/img8.jpg">
-        <img src="images/img7.png">
-        <img src="images/img5.jpg">
+        <div class="maxi clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="promopic">
+            <img src="images/img8.jpg">
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mini clearfix">
+          <div class="head">
+            <div class="floatleft">
+              <p>Dining</p>
+            </div> 
+            <div class="floatright">
+              <p>Mongkok</p>
+            </div> 
+          </div>
+          <div class="foot clearfix">
+            <div class="logo floatleft">
+              <img src="images/carnegieslogo.png">
+            </div>
+            <div class="description floatright">
+              <h2>Monday half price mains</h2>
+              <p>From 5pm til late get your second main half price!</p>
+            </div>
+          </div>
+        </div>
       </div>
      </div>
+  </body>
+</html>
+

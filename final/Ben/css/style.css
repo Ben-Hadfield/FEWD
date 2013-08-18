@@ -10,7 +10,6 @@ header {margin: 0 auto;
 		padding-top: 1px; /* why??*/
 }
 
-
 header h1 {
   height: 97px;
   width: 200px;
@@ -22,24 +21,32 @@ header h1 {
   margin: -0.33em 0 0 0;
 }
 
+form {padding: 41px 0;
+
+}
+.location {
+	background-color: green;}
+
+.category {
+	background-color: purple;
+}
+
 nav ul {	
 	margin: 0 auto;
-
+	padding: 0;
 }
 
 	nav ul li {
 		float: left;
 		padding: auto;
 		display: inline;
-		background-color: yellow;
-
 	}
 
 	nav li a {
 		display: block;
 		box-sizing: border-box;
-		width: 120px;
 		padding: 20px 0;
+		width: 128px;
 		font-size: 1em;
 		text-align: center;
 		border-color: black;
@@ -52,9 +59,20 @@ nav ul {
 		color: blue;
 	}
 
-	nav select {
+.locationlarge {
+		width: 30%;
+		margin: 1%;
+	}
+
+
+.category select {
 		display: none;
 	}
+
+.locationmobile {display: none;
+
+}
+
 
 
 /*----------------------------------------------------------------------------- 
@@ -66,25 +84,99 @@ body {background-color: black;
 
 .container {
   	margin: 0 auto;
-  	width: 1008px;
-  	background: rgba(254, 222, 0, 0.8);
+  	width: 960px;
+  	background: gray;
 }
 
 .container h1 {
 		text-align: center;
-		margin: 20px;	
+		padding: 10px;
 
 }
 
 .content {box-sizing: border-box;
-		width: 33.3%;
+		width: 33%;
+		margin: 0.1rem;
 		float: left;
+
 } 
 
-.content img {border-color: green;
-				border-style: solid;
-				width: 100%;
-} 
+.midi {
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+.mini {
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+.maxi {
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+	.head {background-color: black;
+		color: white;
+		height: 25px;
+		margin: 0;
+	}
+
+	.head p {margin: 0px;
+		padding: 2px 10px;
+	}
+
+	.midi .promopic {
+		overflow: hidden;
+		margin-bottom: -4px;
+	}
+	.midi .promopic img {
+		width: 100%;
+		}
+
+	.maxi .promopic {
+		overflow: hidden;
+		margin-bottom: -4px;
+		}	
+	.maxi .promopic img {
+		width: 100%;
+		}	
+
+		.foot {
+		background-color: white;
+		overflow: hidden;
+	}
+
+		.foot .logo {
+		width: 20%;
+		border-right: dotted 1px;
+	}
+
+	.foot .logo img {
+	width: 100%;
+	}
+
+	.foot .description {
+		background-color: white;
+		width: 79%;
+	}
+
+		.foot .description h2{
+			padding: 10px 0 0 5px;
+			margin: 0;
+			font-size: 15px;
+			font-weight: bold;
+
+
+		}
+
+		.foot .description p{
+			padding: 5px;
+			margin: 0;
+			font-size: 10px;
+		}
+
+
 
 /*----------------------------------------------------------------------------- 
 =03 MISC 
@@ -103,14 +195,12 @@ body {background-color: black;
 	clear: both;	
 }
 
-.imgright {
+.floatright {
 	float: right;
-	margin: 0 0 10px 10px;
 }
 
-.imgleft {
+.floatleft {
 	float: left; 
-	margin: 0 10px 10px 0;
 }
 
 .imgborder {
@@ -119,31 +209,33 @@ body {background-color: black;
 
 /*----------------------------------------------------------------------------- 
 =04 @media 
+
+
 -----------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+@media only screen and (min-width: 768px) and (max-width: 970px) {
   	body {width: 100%;
   	}
-
 	nav {width: 100%;
 	}
+
+	nav ul {display: none;
+
+	}
+
+.category select {display: inline-block;
+	margin: 10px 0;
+	width: 100%;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
-  	body {width: 100%;
-  	}
-	nav {width: 100%;
-	}
 .container {width: 100%;
 }
 
-#one {width: 33.3%;}
-
-#two {width: 33.3%;}
-
-#three {width: 33.3%;
+	.content {margin: 0.1%;
 
 	}
+
 
 }
 
@@ -165,14 +257,40 @@ body {background-color: black;
 .container {width: 100%;
 }
 
-#one {width: 50%;}
+.content {width: 49%
 
-#two {width: 50%;}
-
-#three {display: none;
-
-	}
 }
+
+#three {display: none;	}
+
+header h1 {background: url("../images/smalllogo.jpg");
+			width: 200px;
+			height: 200px;
+
+}
+
+header form {width: 70%;}
+
+
+.category select {display: inline-block;
+	width: 30%;
+}
+
+.location {float: left;}
+
+.locationlarge {display: none;}
+
+.locationmobile {display: inline-block;
+	width: 100%;
+
+}
+
+
+
+
+}
+
+
 
 @media only screen and (max-width: 479px) {
   	body {width: 100%;
@@ -187,16 +305,32 @@ body {background-color: black;
 
 	nav select {display: inline-block;}
 
+	header h1 {background: url("../images/smalllogo.jpg");
+			width: 200px;
+			height: 200px;
+
+}
+
 .container {width: 100%;
 }
 
-#one {width: 100%;}
+.content {width: 100%}
 
 #two {display: none;}
 
 #three {display: none;
 
 	}
+.category select {display: inline-block;
+	margin: 10px 0;
+	width: 25%;
+
+}
+.location {width: 25%;
+		float: left;}
+.locationlarge {display: none;}
+.locationmobile {display: inline-block;
+width: 100%;}
 
 }
 

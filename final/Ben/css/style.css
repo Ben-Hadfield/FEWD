@@ -21,15 +21,39 @@ header h1 {
   margin: -0.33em 0 0 0;
 }
 
-form {padding: 41px 0;
-
+form {padding: 13px 0 13px 0;
 }
+form input {
+		width: 110px;
+		border-radius: 5px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+}
+
+
 .location {
 	background-color: green;}
+
+	.locationlarge {
+		width: 30%;
+		margin: 1%;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	.locationmobile {display: none;
+			padding: 5px;
+			border-radius: 5px;		
+	}
 
 .category {
 	background-color: purple;
 }
+	.category select {
+		display: none;
+		padding: 5px;
+		border-radius: 5px;
+
+	}
 
 nav ul {	
 	margin: 0 auto;
@@ -46,7 +70,7 @@ nav ul {
 		display: block;
 		box-sizing: border-box;
 		padding: 20px 0;
-		width: 128px;
+		width: 120px;
 		font-size: 1em;
 		text-align: center;
 		border-color: black;
@@ -58,21 +82,6 @@ nav ul {
 	nav li a:hover {
 		color: blue;
 	}
-
-.locationlarge {
-		width: 30%;
-		margin: 1%;
-	}
-
-
-.category select {
-		display: none;
-	}
-
-.locationmobile {display: none;
-
-}
-
 
 
 /*----------------------------------------------------------------------------- 
@@ -263,20 +272,16 @@ body {background-color: black;
 
 #three {display: none;	}
 
-header h1 {background: url("../images/smalllogo.jpg");
-			width: 200px;
-			height: 200px;
-
-}
 
 header form {width: 70%;}
 
 
 .category select {display: inline-block;
-	width: 30%;
+	width: 50%;
 }
 
-.location {float: left;}
+.location {float: left;
+	width: 50%;}
 
 .locationlarge {display: none;}
 
@@ -305,11 +310,6 @@ header form {width: 70%;}
 
 	nav select {display: inline-block;}
 
-	header h1 {background: url("../images/smalllogo.jpg");
-			width: 200px;
-			height: 200px;
-
-}
 
 .container {width: 100%;
 }
@@ -322,11 +322,10 @@ header form {width: 70%;}
 
 	}
 .category select {display: inline-block;
-	margin: 10px 0;
-	width: 25%;
+	width: 50%;
 
 }
-.location {width: 25%;
+.location {width: 50%;
 		float: left;}
 .locationlarge {display: none;}
 .locationmobile {display: inline-block;

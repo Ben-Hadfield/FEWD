@@ -9,3 +9,52 @@ This is a banking application. This program will update your balance with your d
 -	Depending on their transaction choice either add or substract the balance. 
 -	Print the new balance to the console.
 */
+
+var balance = 1000;
+var transaction;
+var amount;
+
+
+
+
+// do {
+
+// transaction = prompt('(d)eposit, (w)ithdrawal, (q)uit');
+
+// if (transaction == 'd') {
+//  amount = parseInt(prompt('how much?'));
+//  balance = balance + amount;
+// console.log('your balance is $' + balance)
+// } else if (transaction == 'w') {
+//  amount = parseInt(prompt('how much?'));
+//  balance = balance - amount;
+// console.log('your balance is $' + balance)
+// } else if (transaction =='q') {
+//  console.log('clean up on eisle 3')
+//  console.log('your balance is $' + balance)
+// } else {
+// 	console.log('error')
+// }
+// } while (transaction != 'q')
+
+
+
+for (null; transaction != 'q'; null) {
+transaction = prompt('(d)eposit, (w)ithdrawal, (q)uit');
+	
+if (transaction == 'd') {
+ amount = parseInt(prompt('how much?'));
+ balance = balance + amount;
+console.log('your balance is $' + balance)
+} else if (transaction == 'w') {
+ amount = parseInt(prompt('how much?'));
+ balance = balance - amount;
+console.log('your balance is $' + balance)
+} else if (transaction =='q') {
+ console.log('clean up on eisle 3')
+ console.log('your balance is $' + balance)
+} else {
+	console.log('error')
+}
+
+}

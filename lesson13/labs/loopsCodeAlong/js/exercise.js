@@ -11,7 +11,7 @@ var response = 'c'
 var counter =  1
 response = prompt('Enter \'q\'uit or \'c\'ontinue');
 
-while (response === 'c'){
+while (response !== 'q'){
 	
 	response = prompt('Enter \'q\'uit or \'c\'ontinue');
 	

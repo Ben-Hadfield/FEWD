@@ -1,5 +1,4 @@
 
-
 /*----------------------------------------------------------------------------- 
 =01 HEADER 
 -----------------------------------------------------------------------------*/
@@ -68,6 +67,7 @@ nav ul {
 		border-color: white;
 		border-left-style: solid;
 		text-decoration:none;
+		color: white;
 	}
 
 	nav li a:hover {
@@ -83,8 +83,7 @@ nav ul {
 =02 BODY 
 -----------------------------------------------------------------------------*/
 
-body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jpg) repeat;;
-	color: white;}
+body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jpg) repeat;}
 
 .container {
   	margin: 0 auto;
@@ -95,6 +94,7 @@ body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jp
 .container h1 {
 		text-align: center;
 		padding: 10px;
+		color: white;
 
 }
 

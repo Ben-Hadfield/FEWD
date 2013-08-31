@@ -107,7 +107,8 @@ body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jp
 
 .container h1 {
 		text-align: center;
-		padding: 10px;
+		padding: 20px 0;
+		margin: 0;
 		color: white;
 
 }
@@ -296,6 +297,7 @@ header form {width: 70%;}
 
 }
 
+
 @media only screen and (max-width: 479px) {
 
   	body {width: 100%;
@@ -315,7 +317,7 @@ header form {width: 70%;}
 
 }
 
-@media only screen and (max-device-width: 479px) {
+/*@media only screen and (max-device-width: 479px) {
 
 
 body {width: 100%;
@@ -333,6 +335,7 @@ body {width: 100%;
 		}
 
 }
+*/
 
 
 

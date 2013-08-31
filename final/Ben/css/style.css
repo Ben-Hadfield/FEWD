@@ -21,8 +21,24 @@ header {margin: 0 auto;
 
 }
 
+li.logo {
+		list-style: none;
+
+}
+
 li.logo a.brand span {
 	display: none;
+
+}
+
+li.logo a.brand .small {
+	display: none;
+
+}
+
+ul {
+	padding-left: 0;
+	margin: 0;
 }
 
 a.button {
@@ -40,8 +56,9 @@ float: left;
 padding: 5px;
 display: block;
 color: #597390;
-font-size: 40px;
+font-size: 15px;
 font-weight: bold;
+
 box-sizing: border-box;
 }
 
@@ -74,6 +91,8 @@ padding-left: 11px;
 }
 
 a.button.icon span{
+	line-height: 52px;
+	display: block;
 padding-left: 50px;}
 
 a.button.icon.location span{
@@ -97,7 +116,7 @@ background: url(../images/signup.png) no-repeat 0;
 =02 BODY 
 -----------------------------------------------------------------------------*/
 
-body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jpg) repeat;}
+body {background: url(../images/bg_body.jpg) repeat;}
 
 .container {
   	margin: 0 auto;
@@ -115,7 +134,7 @@ body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jp
 
 .content {box-sizing: border-box;
 		width: 33%;
-		margin: 0.1rem;
+		margin: 0.1%;
 		float: left;
 
 } 
@@ -233,24 +252,45 @@ body {background: url(../images/bg_head.jpg)  repeat-x, url(../images/bg_body.jp
 -----------------------------------------------------------------------------*/
 
 
-@media only screen and (min-width: 768px) and (max-width: 970px) {
+@media only screen and (max-width: 970px) {
+  	.menu {width: 100%;}
+
+
+a.button.icon.login span{
+text-indent: -9999px;
+}
+a.button.icon.signup span{
+text-indent: -9999px;
+width: 0px;
+}
+
   	body {width: 100%;
   	}
 
 .container {width: 100%;
 }
 
-	.content {margin: 0.1%;
+}
 
-	}
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+
+  	.menu {width: 100%;}
+
+  	li.logo a.brand .big {
+	display: none;
+
+}
+li.logo a.brand .small {
+	display: block;
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  	body {width: 100%;
+a.button.icon.login span{
+text-indent: -9999px;
 }
-.container {width: 100%;
+a.button.icon.signup span{
+text-indent: -9999px;
 }
 
 .content {width: 49%
@@ -264,14 +304,32 @@ header form {width: 70%;}
 
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 549px) {
 
-  	body {width: 100%;
-  	}
+  	.menu {width: 100%;}
+
+  	li.logo a.brand .big {
+	display: none;
+
+}
+li.logo a.brand .small {
+	display: block;
+
+}
 
 
-		.container {width: 100%;
-		}
+a.button.icon.location span{
+text-indent: -9999px;
+}
+a.button.icon.category span{
+text-indent: -9999px;
+}
+a.button.icon.login span{
+text-indent: -9999px;
+}
+a.button.icon.signup span{
+text-indent: -9999px;
+}
 
 		.content {width: 100%}
 
@@ -280,6 +338,8 @@ header form {width: 70%;}
 		#three {display: none;
 
 			}
+
+
 
 }
 

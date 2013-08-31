@@ -13,16 +13,19 @@ header {margin: 0 auto;
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient
 		    (startColorStr='#ffffff', EndColorStr='#dbdbdb')";
 		padding-top: 1px; /* why??*/
-		border: 1px solid #fff;
-		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
-		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
-		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		position: fixed;
 
 }
 
 .menu {
 	width: 90%;
 	margin: 0 auto;
+		border-radius: 3px;
+		border: 1px solid #fff;
+		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+
 
 }
 
@@ -100,7 +103,7 @@ padding-left: 11px;
 a.button.icon span{
 	line-height: 40px;
 	display: block;
-padding-left: 50px;}
+padding-left: 35px;}
 
 a.button.icon.location span{
 background: url(../images/location.png) no-repeat 0;
@@ -133,7 +136,7 @@ body {background: url(../images/bg_head.jpg) repeat;}
 
 .container h1 {
 		text-align: center;
-		padding: 20px 0;
+		padding: 60px 0 20px 0;
 		margin: 0;
 		color: white;
 
@@ -266,11 +269,13 @@ body {background: url(../images/bg_head.jpg) repeat;}
 a.button.icon.login span{
 text-indent: -9999px;
 background: url(../images/login-small.png) no-repeat 0;
+padding-left: 50px;
 }
 a.button.icon.signup span{
 text-indent: -9999px;
 background: url(../images/signup-small.png) no-repeat 0;
 width: 0px;
+padding-left: 50px;
 }
 
   	body {width: 100%;
@@ -308,11 +313,13 @@ li.logo a.brand .small {
 a.button.icon.location span{
 text-indent: -9999px;
 background: url(../images/location-small.png) no-repeat 0;
+padding-left: 50px;
 }
 
 a.button.icon.category span{
 text-indent: -9999px;
 background: url(../images/category-small.png) no-repeat 0;
+padding-left: 50px;
 }
 
 

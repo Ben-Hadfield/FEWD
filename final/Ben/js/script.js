@@ -7,5 +7,5 @@ $('a.location').click(
 $('a.category').click(
 	function(e){
 		e.preventDefault()
-		$('.category_active').slideToggle();
+		$('.categorybar').slideToggle();
 	})

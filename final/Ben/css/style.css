@@ -228,9 +228,20 @@ body {background: url(../images/bg_head.jpg) repeat;}
 
 }
 
+.datescroll a.leftright {
+	width: 44px;
+	height: 44px;
+
+}
+
+.contentwrapper {
+		overflow: hidden;
+
+}
+
 .content {box-sizing: border-box;
-		width: 33.1%;
-		margin:0.1%;
+		width: 32.9%;
+		margin:0.2%;
 		float: left;
 
 } 
@@ -238,16 +249,58 @@ body {background: url(../images/bg_head.jpg) repeat;}
 .midi {
 	width: 100%;
 	margin-bottom: 4px;
+			background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+		background-image: -webkit-gradient(linear,left top,left bottom,
+			    color-stop(0, #ffffff),color-stop(1, #dbdbdb));
+			filter: progid:DXImageTransform.Microsoft.gradient
+			    (startColorStr='#ffffff', EndColorStr='#dbdbdb');
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+			    (startColorStr='#ffffff', EndColorStr='#dbdbdb')";
+	    border: 1px solid #fff;
+		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;	
 }
 
 .mini {
 	width: 100%;
 	margin-bottom: 4px;
+			background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+		background-image: -webkit-gradient(linear,left top,left bottom,
+			    color-stop(0, #ffffff),color-stop(1, #dbdbdb));
+			filter: progid:DXImageTransform.Microsoft.gradient
+			    (startColorStr='#ffffff', EndColorStr='#dbdbdb');
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+			    (startColorStr='#ffffff', EndColorStr='#dbdbdb')";
+	    border: 1px solid #fff;
+		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;	
 }
 
 .maxi {
 	width: 100%;
 	margin-bottom: 4px;
+			background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+		background-image: -webkit-gradient(linear,left top,left bottom,
+			    color-stop(0, #ffffff),color-stop(1, #dbdbdb));
+			filter: progid:DXImageTransform.Microsoft.gradient
+			    (startColorStr='#ffffff', EndColorStr='#dbdbdb');
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+			    (startColorStr='#ffffff', EndColorStr='#dbdbdb')";
+	    border: 1px solid #fff;
+		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;	
 }
 
 	.head {background-color: black;
@@ -397,74 +450,74 @@ width: 100%;
 
 @media only screen and (max-width: 767px) {
 
-a.button {padding: 3px;
+	a.button {padding: 3px;
 
-}
+	}
 
-a.button.icon span {
-	line-height: 44px;
-}
+		a.button.icon span {
+			line-height: 44px;
+		}
 
-a.button.icon.location span{
-text-indent: -9999px;
-background: url(../images/location-small.png) no-repeat 0;
-padding-left: 50px;
-}
+			a.button.icon.location span{
+			text-indent: -9999px;
+			background: url(../images/location-small.png) no-repeat 0;
+			padding-left: 50px;
+			}
 
-a.button.icon.category span{
-text-indent: -9999px;
-background: url(../images/category-small.png) no-repeat 0;
-padding-left: 50px;
-}
+			a.button.icon.category span{
+			text-indent: -9999px;
+			background: url(../images/category-small.png) no-repeat 0;
+			padding-left: 50px;
+			}
 
-.location_active {
-	margin-right: 198px;
-	width: 220px;
-}
+	.location_active {
+		margin-right: 198px;
+		width: 220px;
+	}
 
-.category_active {
-	margin-right: 132px;
-}
+	.category_active {
+		margin-right: 132px;
+	}
 
-.content {width: 49.8%
+	.content {width: 49.6%
 
-}
+	}
 
-#three {display: none;	}
+		#three {display: none;	}
 
-}
+		}
 
 @media only screen and (max-width: 550px) {
 
   	li.logo a.brand .big {
 	display: none;
 
-}
-li.logo a.brand .small {
-	display: block;
+	}
+	li.logo a.brand .small {
+		display: block;
 
-}
+	}
 
-.location_active {
-	margin-right: 50px;
-}
+	.location_active {
+		margin-right: 50px;
+	}
 
-.locationbar {
-	height: 350px;
-	overflow: scroll;
+	.locationbar {
+		height: 350px;
+		overflow: scroll;
 
-}
+	}
 
 
-.category_active {
-	margin-right: 0;
-}
+	.category_active {
+		margin-right: 0;
+	}
 
-.datescroll h1 { 
-	line-height: 40px;    
-	font-size: 22px;
+	.datescroll h1 { 
+		line-height: 40px;    
+		font-size: 22px;
 
-}
+	}
 
 		.content {width: 99.8%;
 		}

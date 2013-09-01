@@ -417,6 +417,14 @@ background: url(../images/category-small.png) no-repeat 0;
 padding-left: 50px;
 }
 
+.location_active {
+	margin-right: 198px;
+	width: 220px;
+}
+
+.category_active {
+	margin-right: 132px;
+}
 
 .content {width: 49.8%
 
@@ -438,12 +446,18 @@ li.logo a.brand .small {
 }
 
 .location_active {
-	margin-right: 198px;
-	width: 220px;
+	margin-right: 50px;
 }
 
+.locationbar {
+	height: 350px;
+	overflow: scroll;
+
+}
+
+
 .category_active {
-	margin-right: 132px;
+	margin-right: 0;
 }
 
 .datescroll h1 { 

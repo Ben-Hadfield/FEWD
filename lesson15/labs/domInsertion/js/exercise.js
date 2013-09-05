@@ -7,12 +7,17 @@
  * Let's get inserting! Before the header h1, let's insert a paragrah that has the text "Welcome!"
  */
 
+$('h1').before('<p>Welcome!</p>')
+
+
 
 /**
  * Question 2:
  * Let's jazz up the header a little bit more. Let's place a kitten image afer the header's h1.
  * Use the url http://placekitten.com/600/200 for the image src
  */
+$('h1').after('<img src="http://placekitten.com/600/20" />')
+
 
 
 /**
@@ -22,6 +27,7 @@
  * <div> with the class "pulse".
  */
 
+$('#fig1 img').wrap('<div class="pulse">');
 
 /**
  * Question 4:
@@ -31,6 +37,8 @@
  * Remeber, we want to place this INSIDE the <figure>
  */
 
+$('figure').append('<figcaption>Cosmic Cat</figcaption>');
+
 
 /**
  * Question 5:
@@ -38,3 +46,7 @@
  * beginning of each paragraph in just our "main" section.
  * No real reason for it. 
  */
+
+
+$('#main p').prepend('<span>*</span>')
+

@@ -213,6 +213,11 @@ body {background: url(../images/bg_head.jpg) repeat;
 			margin: 20px auto;
 			color: white;
 		}
+			#date {
+				text-transform: uppercase;
+			}
+
+
 			.datescroll h1 {
 				text-align: center;
 				margin: 0 auto;

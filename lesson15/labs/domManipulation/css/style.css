@@ -6,6 +6,8 @@ Project: Page Layout
 
 /* General Styles */
 
+
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 12px;
@@ -100,5 +102,5 @@ blockquote {
 	text-align: right;
 }
 
-
+#container.colored-container { background-color: blue; }
 

@@ -1,3 +1,8 @@
+$('#instruction-title').remove()
+$('#instruction').remove()
+
+$('#shopping-list').before('<h1>My shopping list</h1>')
+
 	var list = [];
 	var food_item;
 	var found = false;
@@ -19,7 +24,8 @@
 	}
 
 	// Print the list to the console
-	console.log('My Shopping List');
+	
 	for (var i=0; i < list.length; i++){
-		console.log(list[i]);
+	$('#shopping-list').append('<li>' + list[i] + '</li>');
+
 	}

@@ -223,7 +223,7 @@ body {background: url(../images/bg_head.jpg) repeat;
 				margin: 0 auto;
 			}
 
-			.datescroll a.leftright {
+			.datescroll a.arrowleft a.arrowright {
 				width: 44px;
 				height: 44px;
 

@@ -1,0 +1,25 @@
+[
+    {
+        "id": 0,
+        "adSize": "midi",
+        "priority": "01",
+        "company": "Carnegies",
+        "logoPic": "http://placehold.it/60x60",
+        "weekDay": "wednesday",
+        "mainImg": "http://placehold.it/500x334",
+        "Description": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
+        "validFrom": "Wed Sep 11 2013",
+        "validTo": "Wed Oct 16 2013",
+        "like": 100,
+        "dislike": 20,
+        "phone": "+1 (937) 569-3407",
+        "address": "459 Lacon Court, Wilsonia, Massachusetts, 1662",
+        "website": "hello@carnegies.com",
+        "latitude": 17.469715,
+        "longitude": -39.689142,
+
+    },
+
+
+
+]

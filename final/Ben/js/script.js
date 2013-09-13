@@ -41,9 +41,13 @@ var day_names = [
 	"Friday",
 	"Saturday"]
 
-var date = day_names[current_date.getDay()] + ' ' + month_names[current_date.getMonth()] + ' ' + current_date.getDate();
-$('#date').text(date);
+var date = [
+	day_names[current_date.getDay()],
+	month_names[current_date.getMonth()],
+	current_date.getDate()
+	].join(" ");
 
+$('#date').text(date);
 
 // left and right arrows to switch forward and back one day from the current date
 

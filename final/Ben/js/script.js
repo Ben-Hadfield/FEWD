@@ -49,37 +49,28 @@ var date = [
 
 $('#date').text(date);
 
-// left and right arrows to switch forward and back one day from the current date
+$('.datescroll').on('click','a', changeDate)
 
-$('.arrowleft').click(function(event) {
+function changeDate(e){
+	current_date = newDate(current_date, $(this).index()) // this works because the left arrow 
+	// has an index of 0, and the right arrow has an index of 2, since we coerce them to a Boolean
+	// in the first line of the newDate function, this is an elegant way to determine the direction
+	// in which you want to increment.
+	$('#date').text(dateString(current_date));
+}
 
-	var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()-1);
+function newDate(base, increment){
+	step = increment ? 1 : -1
+	return new Date(base.getFullYear(), base.getMonth(), base.getDate() + step);
+}
 
-	// You may want to refactor this into a newData function :)
-
-	current_date = newDate
-
-	var newDateString =	[
-		day_names[newDate.getDay()],
-		month_names[newDate.getMonth()],
-		newDate.getDate()].join(' ');
-
-	$('#date').text(newDateString);
-
-})
-
-$('.arrowright').click(function(event) {
-
-	var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()+1);
-
-	current_date = newDate
-
-	var newDateString =	day_names[newDate.getDay()] + ' ' + month_names[newDate.getMonth()] + ' ' + newDate.getDate();
-	$('#date').text(newDateString);
-
-})
-
-
+function dateString(date){
+	return [ 
+		day_names[date.getDay()],
+		month_names[date.getMonth()],
+		date.getDate()
+	].join(' ');
+}
 // need the content in contentwrapper to refresh to only include those with a deal on that date and still available (i.e. a lunch deal after lunch is useless)
 
 

@@ -53,23 +53,29 @@ $('#date').text(date);
 
 $('.arrowleft').click(function(event) {
 
-var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()-1);
+	var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()-1);
 
-current_date = newDate
+	// You may want to refactor this into a newData function :)
 
-var newDateString =	day_names[newDate.getDay()] + ' ' + month_names[newDate.getMonth()] + ' ' + newDate.getDate();
-$('#date').text(newDateString);
+	current_date = newDate
+
+	var newDateString =	[
+		day_names[newDate.getDay()],
+		month_names[newDate.getMonth()],
+		newDate.getDate()].join(' ');
+
+	$('#date').text(newDateString);
 
 })
 
 $('.arrowright').click(function(event) {
 
-var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()+1);
+	var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()+1);
 
-current_date = newDate
+	current_date = newDate
 
-var newDateString =	day_names[newDate.getDay()] + ' ' + month_names[newDate.getMonth()] + ' ' + newDate.getDate();
-$('#date').text(newDateString);
+	var newDateString =	day_names[newDate.getDay()] + ' ' + month_names[newDate.getMonth()] + ' ' + newDate.getDate();
+	$('#date').text(newDateString);
 
 })
 

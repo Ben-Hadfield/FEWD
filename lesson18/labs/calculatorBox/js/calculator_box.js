@@ -20,8 +20,27 @@ Hint: Research the .click(), .text() in jQuery documentation
 var total = 0;
 
 $(function(){
+	$('#app').on('click','mathrow > div', update)
 
-	//$(box to be updated).click(function call);
+
+//$('#a10').on('click',10,update)
+//$('#a20').on('click',20,update)
+//$('#a30').on('click',30,update)
+//$('#n10').on('click',-10,update)
+//$('#n20').on('click',-20,update)
+//$('#n30').on('click',-30,update)
 
 
+//$('#a10').click(function(){ update(10); });
+//$('#a20').click(function(){ update(20); });
+//$('#a30').click(function(){ update(30); });
+//$('#n10').click(function(){ update(-10); });
+//$('#n20').click(function(){ update(-20); });
+//$('#n30').click(function(){ update(-30); });
 });
+
+function update(event) {
+	total = total + parseInt($(this).text());
+	//total = total + event;
+	$('#out').text(total);
+}

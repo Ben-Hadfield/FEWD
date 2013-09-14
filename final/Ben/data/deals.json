@@ -17,7 +17,9 @@
         "website": "hello@carnegies.com",
         "latitude": 17.469715,
         "longitude": -39.689142,
-
+        "region": "Hong Kong Island",
+        "district": "Central",
+        "category": "dining"
     },
 
 

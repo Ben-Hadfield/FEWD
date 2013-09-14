@@ -18,58 +18,59 @@ $('a.category').click(
 
 var current_date = new Date ( );
 
-var month_names = new Array ( );
-month_names[month_names.length] = "January";
-month_names[month_names.length] = "February";
-month_names[month_names.length] = "March";
-month_names[month_names.length] = "April";
-month_names[month_names.length] = "May";
-month_names[month_names.length] = "June";
-month_names[month_names.length] = "July";
-month_names[month_names.length] = "August";
-month_names[month_names.length] = "September";
-month_names[month_names.length] = "October";
-month_names[month_names.length] = "November";
-month_names[month_names.length] = "December";
+var month_names = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"]
 
-var day_names = new Array ( );
-day_names[day_names.length] = "Sunday";
-day_names[day_names.length] = "Monday";
-day_names[day_names.length] = "Tuesday";
-day_names[day_names.length] = "Wednesday";
-day_names[day_names.length] = "Thursday";
-day_names[day_names.length] = "Friday";
-day_names[day_names.length] = "Saturday";
+var day_names = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"]
 
-var date = day_names[current_date.getDay()] + ' ' + month_names[current_date.getMonth()] + ' ' + current_date.getDate();
+var date = [
+	day_names[current_date.getDay()],
+	month_names[current_date.getMonth()],
+	current_date.getDate()
+	].join(" ");
+
 $('#date').text(date);
 
+$('.datescroll').on('click','a', changeDate)
 
-// left and right arrows to switch forward and back one day from the current date
+function changeDate(e){
+	current_date = newDate(current_date, $(this).index()) // this works because the left arrow 
+	// has an index of 0, and the right arrow has an index of 2, since we coerce them to a Boolean
+	// in the first line of the newDate function, this is an elegant way to determine the direction
+	// in which you want to increment.
+	$('#date').text(dateString(current_date));
+}
 
-$('.arrowleft').click(function(event) {
+function newDate(base, increment){
+	step = increment ? 1 : -1
+	return new Date(base.getFullYear(), base.getMonth(), base.getDate() + step);
+}
 
-var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()-1);
-
-current_date = newDate
-
-var newDateString =	day_names[newDate.getDay()] + ' ' + month_names[newDate.getMonth()] + ' ' + newDate.getDate();
-$('#date').text(newDateString);
-
-})
-
-$('.arrowright').click(function(event) {
-
-var newDate = new Date(current_date.getFullYear(), current_date.getMonth(), current_date.getDate()+1);
-
-current_date = newDate
-
-var newDateString =	day_names[newDate.getDay()] + ' ' + month_names[newDate.getMonth()] + ' ' + newDate.getDate();
-$('#date').text(newDateString);
-
-})
-
-
+function dateString(date){
+	return [ 
+		day_names[date.getDay()],
+		month_names[date.getMonth()],
+		date.getDate()
+	].join(' ');
+}
 // need the content in contentwrapper to refresh to only include those with a deal on that date and still available (i.e. a lunch deal after lunch is useless)
 
 

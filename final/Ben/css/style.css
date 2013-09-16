@@ -138,13 +138,15 @@ header {margin: 0 auto;
 				.locationbar > div {
 					width : 33.3%;
 					box-sizing: border-box;
-					border-right: 1px solid #fff;
+					border-left: 1px solid #fff;
 					margin: 0;
 					float: left;
 
 				}
-				.locationbar h3 {
-					padding-left: 10px;
+				.locationbar #selectionhead {
+					font-size: 18px;
+					padding-bottom: 10px;
+					font-weight: bold;
 				}
 
 				.locationbar li {
@@ -155,11 +157,12 @@ header {margin: 0 auto;
 					.locationbar li a {
 						text-decoration: none;
 						color: gray;
+						padding-left: 20px;
 					}
 
 						.locationbar li a:hover {
 						color: black;
-					}
+						}
 
 		.category_active {
 			position: relative;

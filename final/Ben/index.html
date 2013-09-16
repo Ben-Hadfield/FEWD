@@ -31,58 +31,62 @@
 
     <div class="location_active floatright">
           <div class ="menu-color locationbar">
-            <div class = "locationlist">
-            <h3>Hong Kong Island</h3>
-            <input type="checkbox">
+            <div id = "locationlist">
+            
             <ul>
-              <li><input type="checkbox"><a href="">Central</a></li>
-              <li><a href="">Wanchai</a></li>
-              <li><a href="">North Point</a></li>
-              <li><a href="">Eastern</a></li>
-              <li><a href="">Kennedy Town</a></li>
-              <li><a href="">Aberdeen</a></li>
-              <li><a href="">Southern</a></li>
+              <li id = "selectionhead"><input type="checkbox" value="Hong Kong Island"><a href="">Hong Kong Island</a></li>
+              <li><input type="checkbox" value="Central"><a href="">Central</a></li>
+              <li><input type="checkbox" value="Wanchai"><a href="">Wanchai</a></li>
+              <li><input type="checkbox" value="North Point"><a href="">North Point</a></li>
+              <li><input type="checkbox" value="Eastern"><a href="">Eastern</a></li>
+              <li><input type="checkbox" value="Kennedy Town"><a href="">Kennedy Town</a></li>
+              <li><input type="checkbox" value="Aberdeen"><a href="">Aberdeen</a></li>
+              <li><input type="checkbox" value="Southern"><a href="">Southern</a></li>
             </ul>
             </div>
-            <div class = "locationlist">
-            <h3>Kowloon</h3>
+            <div id = "locationlist">
             <ul>
-              <li><a href="">Tsim Sha Tsui</a></li>
-              <li><a href="">Yau Ma Tei</a></li>
-              <li><a href="">Mong Kok</a></li>
-              <li><a href="">Kowloon City</a></li>
-              <li><a href="">Sham Shui Po</a></li>
-              <li><a href="">Wong Tai Sin</a></li>
-              <li><a href="">Kwun Tong</a></li>
+              <li id = "selectionhead"><input type="checkbox" value="Kowloon"><a href="">Kowloon</a></li>
+              <li><input type="checkbox" value="Tsim Sha Tsui"><a href="">Tsim Sha Tsui</a></li>
+              <li><input type="checkbox" value="Yau Ma Tei"><a href="">Yau Ma Tei</a></li>
+              <li><input type="checkbox" value="Mong Kok"><a href="">Mong Kok</a></li>
+              <li><input type="checkbox" value="Kowloon City"><a href="">Kowloon City</a></li>
+              <li><input type="checkbox" value="Sham Shui Po"><a href="">Sham Shui Po</a></li>
+              <li><input type="checkbox" value="Wong Tai Sin"><a href="">Wong Tai Sin</a></li>
+              <li><input type="checkbox" value="Kwun Tong"><a href="">Kwun Tong</a></li>
             </ul>
             </div>
-            <div class = "locationlist">
-            <h3>New Territories</h3>
+            <div id = "locationlist">
             <ul>
-              <li><a href="">Islands</a></li>
-              <li><a href="">Kwai Tsing</a></li>
-              <li><a href="">North</a></li>
-              <li><a href="">Sai Kung</a></li>
-              <li><a href="">Tai Po</a></li>
-              <li><a href="">Tsuen Wan</a></li>
-              <li><a href="">Tuen Mun</a></li>
-              <li><a href="">Yuen Long</a></li>
+              <li id = "selectionhead"><input type="checkbox" value="New Territories"><a href="">New Territories</a></li>
+              <li><input type="checkbox" value="Islands"><a href="">Islands</a></li>
+              <li><input type="checkbox" value="Kwai Tsing"><a href="">Kwai Tsing</a></li>
+              <li><input type="checkbox" value="North"><a href="">North</a></li>
+              <li><input type="checkbox" value="Sai Kung"><a href="">Sai Kung</a></li>
+              <li><input type="checkbox" value="Tai Po"><a href="">Tai Po</a></li>
+              <li><input type="checkbox" value="Tsuen Wan"><a href="">Tsuen Wan</a></li>
+              <li><input type="checkbox" value="Tuen Mun"><a href="">Tuen Mun</a></li>
+              <li><input type="checkbox" value="Yuen Long"><a href="">Yuen Long</a></li>
             </ul>
             </div>
+            <button id = "submitfield">Submit</button>
+            <button id = "clearfield">Clear</button>
           </div>
           </div>
          <div class="category_active floatright">
             <div class = "menu-color categorybar">
             <ul>
-              <li><a href="">Dining</a></li>
-              <li><a href="">Nightlife</a></li>
-              <li><a href="">Shopping</a></li>
-              <li><a href="">Events</a></li>
-              <li><a href="">Movies</a></li>
-              <li><a href="">Activities</a></li>
-              <li><a href="">Meet Ups</a></li>
-              <li><a href="">Other</a></li>
+              <li><input type="checkbox" value="Dining"><a href="">Dining</a></li>
+              <li><input type="checkbox" value="Nightlife"><a href="">Nightlife</a></li>
+              <li><input type="checkbox" value="Shopping"><a href="">Shopping</a></li>
+              <li><input type="checkbox" value="Events"><a href="">Events</a></li>
+              <li><input type="checkbox" value="Movies"><a href="">Movies</a></li>
+              <li><input type="checkbox" value="Activities"><a href="">Activities</a></li>
+              <li><input type="checkbox" value="Meet Ups"><a href="">Meet Ups</a></li>
+              <li><input type="checkbox" value="Other"><a href="">Other</a></li>
             </ul>
+            <button id = "submitfield">Submit</button>
+            <button id = "clearfield">Clear</button>
             </div>
           </div>
      </div>
@@ -271,8 +275,11 @@
       </div>
     </div> 
      </div>
+     <script  src="./data/deals.json"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
      <script type="text/javascript" src="./js/script.js"></script>
+
   </body>
 </html>
 

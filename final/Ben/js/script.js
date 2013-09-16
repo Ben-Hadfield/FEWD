@@ -73,6 +73,52 @@ function dateString(date){
 }
 // need the content in contentwrapper to refresh to only include those with a deal on that date and still available (i.e. a lunch deal after lunch is useless)
 
+// var wedDeals = [];
+
+
+// function sortDeals(json, key, condition, newArray)	{
+
+function sortDealsByDay(json, condition, newArray)	{
+	for (var i = 0; i < deals.length; i++) {
+		// console.log("This is the key: ", key)
+		// var key = "weekDay"
+		// if (json[i].key === condition) {
+
+		
+		if (json[i].weekDay === condition) {
+		// if (("json["+ i + "]"+ key) === condition) {
+
+		newArray.push(json[i])
+
+		};
+	
+	};
+};
+// sortDeals(deals, day_names[3], wedDeals)
+// console.log(wedDeals)
+
+// console.log(monDeals)
+
+$(".arrowright, .arrowleft").click(function() {
+	var todaysDeals = [];
+	var con = dateString(current_date).split(" ");
+	// console.log(con[0])
+	// var derk = "weekDay"
+	sortDealsByDay(deals, con[0], todaysDeals)
+	// sortDeals(deals, derk, con[0], todaysDeals)
+
+      $(".one").prepend('<div class = ' + deals[i].adSize + '></div>');
+      $("#result").append('<p>color : ' + json[i].color  + '</p>');
+      $("#result").append('<p>origin: ' + json[i].origin + '</p>');
+      $("#result").append('<hr>');
+
+
+console.log(todaysDeals)	
+});
+
+
+
+
 
 // need JS to dynamically refresh the list based on selections made by user on category/location without page refresh
 
@@ -83,7 +129,16 @@ function dateString(date){
 //need divs to open to include more information including a map etc.
 
 
-
+// function initialize() {
+//         var map_canvas = document.getElementById('map_canvas');
+//         var map_options = {
+//           center: new google.maps.LatLng(44.5403, -78.5463),
+//           zoom: 8,
+//           mapTypeId: google.maps.MapTypeId.ROADMAP
+//         }
+//         var map = new google.maps.Map(map_canvas, map_options)
+//       }
+//       google.maps.event.addDomListener(window, 'load', initialize);
 
 
 

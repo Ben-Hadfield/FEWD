@@ -7,7 +7,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Wednesday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -20,7 +20,7 @@ var deals = [
         "longitude": -39.689142,
         "region": "Hong Kong Island",
         "district": "Central",
-        "category": "dining"
+        "category": "Dining"
     },
 
     {
@@ -31,7 +31,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Tuesday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -44,7 +44,7 @@ var deals = [
         "longitude": -39.689142,
         "region": "Hong Kong Island",
         "district": "Wanchai",
-        "category": "dining"
+        "category": "Dining"
     },
 
     {
@@ -55,7 +55,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Monday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -79,7 +79,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Sunday",
         "mainImg": "http://placehold.it/700x350",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -103,7 +103,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Tuesday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -116,7 +116,7 @@ var deals = [
         "longitude": -39.689142,
         "region": "Hong Kong Island",
         "district": "North Point",
-        "category": "dining"
+        "category": "Dining"
     },
 
     {
@@ -127,7 +127,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Saturday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -140,7 +140,7 @@ var deals = [
         "longitude": -39.689142,
         "region": "Hong Kong Island",
         "district": "Aberdeen",
-        "category": "dining"
+        "category": "Dining"
     },
 
     {
@@ -151,7 +151,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Thursday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -164,7 +164,7 @@ var deals = [
         "longitude": -39.689142,
         "region": "Hong Kong Island",
         "district": "Central",
-        "category": "dining"
+        "category": "Dining"
     },
 
     {
@@ -175,7 +175,7 @@ var deals = [
         "logoImg": "http://placehold.it/60x60",
         "weekDay": "Thursday",
         "mainImg": "http://placehold.it/500x334",
-        "adTitle": "Ipsum lorem boredum Ipsum lorem boredum",
+        "adTitle": "Ipsum lorem boredum",
         "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
         "validFrom": "Wed Sep 11 2013",
         "validTo": "Wed Oct 16 2013",
@@ -187,8 +187,8 @@ var deals = [
         "latitude": 17.469715,
         "longitude": -39.689142,
         "region": "Hong Kong Island",
-        "district": "Wanchai",
-        "category": "dining"
-    },
+        "district": "Southern",
+        "category": "Dining"
+    }
 
 ]

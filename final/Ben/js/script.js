@@ -49,10 +49,12 @@ var date = [
 
 $('#date').text(date);
 
-$('.datescroll').on('click','a', changeDate)
+prepareAds();
 
-function changeDate(e){
-	current_date = newDate(current_date, $(this).index()) // this works because the left arrow 
+//$('.datescroll').on('click','a', changeDate)
+
+function changeDate(step){
+	current_date = newDate(current_date, step) // this works because the left arrow 
 	// has an index of 0, and the right arrow has an index of 2, since we coerce them to a Boolean
 	// in the first line of the newDate function, this is an elegant way to determine the direction
 	// in which you want to increment.
@@ -89,17 +91,26 @@ function sortDealsByDay(json, condition, newArray)	{
 		// if (("json["+ i + "]"+ key) === condition) {
 
 		newArray.push(json[i])
+		console.log(json[i].weekDay)
 
 		};
 	
 	};
 };
-// sortDeals(deals, day_names[3], wedDeals)
-// console.log(wedDeals)
-
-// console.log(monDeals)
 
 $(".arrowright, .arrowleft").click(function() {
+
+	if ($(this).hasClass('arrowleft')) {
+		changeDate(false);
+	} else {
+		changeDate(true);
+	}
+
+	prepareAds();
+
+});
+
+function prepareAds() {
 	var todaysDeals = [];
 	var con = dateString(current_date).split(" ");
 	// console.log(con[0])
@@ -107,14 +118,22 @@ $(".arrowright, .arrowleft").click(function() {
 	sortDealsByDay(deals, con[0], todaysDeals)
 	// sortDeals(deals, derk, con[0], todaysDeals)
 
-      $(".one").prepend('<div class = ' + deals[i].adSize + '></div>');
-      $("#result").append('<p>color : ' + json[i].color  + '</p>');
-      $("#result").append('<p>origin: ' + json[i].origin + '</p>');
-      $("#result").append('<hr>');
+// console.log(todaysDeals)	
+
+	$("#one").html('');
+
+    for (var i = 0; i < todaysDeals.length; i++) {
+      $("#one").prepend('<div class="ad ad-' + i + ' ' + todaysDeals[i].adSize + '"></div>');
+      $(".ad-" + i).html('<div class="head"></div><div class="promopic"></div><div class="foot"></div>');
+      $(".ad-" + i + " .head").html('<div class="floatleft"><p>' + todaysDeals[i].category + '</p></div><div class="floatright"><p>' + todaysDeals[i].district + '</p></div>');
+      $(".ad-" + i + " .promopic").html('<img src=' + todaysDeals[i].mainImg + '>');
+      $(".foot").append('<div class="logo floatleft"><img src=' + todaysDeals[i].logoImg + '></div><div class="description floatright"><h2>' + todaysDeals[i].adTitle + '<h2>');
+      $(".description").append('<p>' + todaysDeals[i].adDescription + '</p>'); 
+  }
+}
 
 
-console.log(todaysDeals)	
-});
+
 
 
 

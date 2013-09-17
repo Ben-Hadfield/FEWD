@@ -1,3 +1,8 @@
+
+// 1. Category and location bars
+// 
+// 
+
 $('a.location').click(
 	function(e){
 		e.preventDefault()
@@ -15,6 +20,10 @@ $('a.category').click(
 		}
 		$('.categorybar').slideToggle();
 	})
+
+// 2. Date updater
+// 
+// 
 
 var current_date = new Date ( );
 
@@ -75,8 +84,9 @@ function dateString(date){
 }
 // need the content in contentwrapper to refresh to only include those with a deal on that date and still available (i.e. a lunch deal after lunch is useless)
 
-// var wedDeals = [];
-
+// 3. Deal sorter - by day
+// 
+//
 
 // function sortDeals(json, key, condition, newArray)	{
 
@@ -132,6 +142,34 @@ function prepareAds() {
   }
 }
 
+
+$("#locationsubmitfield").click(function() {
+
+	var checkLocation = []
+	$("input[id='adDistrictCheck']:checked").each(function ()
+	{
+	    checkLocation.push($(this).val());
+	});
+
+	for (var i = 0; i < deals.length; i++) {
+		if ($(".head:contains('" + deals[i].district + "')")) {
+			$(".ad").show()
+		} else {
+			$(".ad").remove()
+		};
+
+	};
+
+		console.log(checkLocation)
+
+});
+
+
+$("#locationclearfield").click(function() {
+	$('#adDistrictCheck').find(':checked').each(function() {
+   		$(this).removeAttr(':checked');
+   	});
+});
 
 
 

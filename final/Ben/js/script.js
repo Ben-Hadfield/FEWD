@@ -167,7 +167,7 @@ function prepareAds() {
       // $(".ad-" + i + " .adMap").append('<div id=#map_canvas></div>')
   }
 
-
+  filterLocation()
 
 }
 
@@ -175,15 +175,11 @@ function prepareAds() {
 // 
 //
 
-
-$("#locationsubmitfield").on('click', function() {
-
+function filterLocation(){
 	var checkLocation = []
-	$("input[id='adDistrictCheck']:checked").each(function ()
-	{
+	$("input[id='adDistrictCheck']:checked").each(function(){
 	    checkLocation.push($(this).val());
 	});
-
 	for (var i = 0; i < deals.length; i++) {
 		if (checkLocation.indexOf(deals[i].district) == -1) {
 			$("#ad-" + i).hide();
@@ -191,7 +187,11 @@ $("#locationsubmitfield").on('click', function() {
 			$("#ad-" + i).show();
 		}
 	}
+}
 
+
+$("#locationsubmitfield").on('click', function() {
+	filterLocation()
 	$('.locationbar').slideToggle();
 });
 

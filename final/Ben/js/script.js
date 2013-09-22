@@ -172,8 +172,22 @@ $("#locationclearfield").click(function() {
 });
 
 
+// Region checkboxes
+$('#adRegionCheck-hk').click(function(){ toggleDistrictsCheckBox('#adRegionCheck-hk', '#locationlist-hk'); });
+$('#adRegionCheck-kl').click(function(){ toggleDistrictsCheckBox('#adRegionCheck-kl', '#locationlist-kl'); });
+$('#adRegionCheck-nt').click(function(){ toggleDistrictsCheckBox('#adRegionCheck-nt', '#locationlist-nt'); });
 
-
+function toggleDistrictsCheckBox(regionCheckboxId, locationListId) {
+	if ($(regionCheckboxId).is(":checked")) {
+		$(locationListId + ' .district').each(function(){
+			$(this).prop('checked', true);
+		});
+	} else {
+		$(locationListId + ' .district').each(function(){
+			$(this).prop('checked', false);
+		});
+	}
+}
 
 
 

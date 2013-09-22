@@ -21,6 +21,8 @@ $('a.category').click(
 		$('.categorybar').slideToggle();
 	})
 
+
+
 // 2. Date updater
 // 
 // 
@@ -102,11 +104,28 @@ function sortDealsByDay(json, condition, newArray)	{
 
 		newArray.push(json[i])
 		console.log(json[i].weekDay)
-
 		};
 	
 	};
 };
+
+// function sortDealsByLocation(json, condition, newArray)	{
+// 	for (var i = 0; i < deals.length; i++) {
+// 		// console.log("This is the key: ", key)
+// 		// var key = "weekDay"
+// 		// if (json[i].key === condition) {
+
+		
+// 		if (json[i].district === condition) {
+// 		// if (("json["+ i + "]"+ key) === condition) {
+
+// 		newArray.push(json[i])
+// 		console.log(json[i].district)
+// 		};
+	
+// 	};
+// };
+
 
 $(".arrowright, .arrowleft").click(function() {
 
@@ -117,6 +136,7 @@ $(".arrowright, .arrowleft").click(function() {
 	}
 
 	prepareAds();
+	refreshAds();
 
 });
 
@@ -130,20 +150,37 @@ function prepareAds() {
 
 // console.log(todaysDeals)	
 
-	$("#one").html('');
+	$(".contentwrapper").html('');
 
     for (var i = 0; i < todaysDeals.length; i++) {
-      $("#one").prepend('<div class="ad ad-' + i + ' ' + todaysDeals[i].adSize + '"></div>');
-      $(".ad-" + i).html('<div class="head"></div><div class="promopic"></div><div class="foot"></div>');
+      $(".contentwrapper").prepend('<div class="ad ad-' + i + ' ' + todaysDeals[i].adSize + '"></div>');
+      $(".ad-" + i).html('<div class="head"></div><div class="promopic"></div><div class="foot"></div><div class="contactinfo"></div><div class="socialbuttons"></div><div class="adMap"></div>');
       $(".ad-" + i + " .head").html('<div class="floatleft"><p>' + todaysDeals[i].category + '</p></div><div class="floatright"><p>' + todaysDeals[i].district + '</p></div>');
       $(".ad-" + i + " .promopic").html('<img src=' + todaysDeals[i].mainImg + '>');
-      $(".foot").append('<div class="logo floatleft"><img src=' + todaysDeals[i].logoImg + '></div><div class="description floatright"><h2>' + todaysDeals[i].adTitle + '<h2>');
-      $(".description").append('<p>' + todaysDeals[i].adDescription + '</p>'); 
+      $(".ad-" + i + " .foot").append('<div class="logo floatleft"><img src=' + todaysDeals[i].logoImg + '></div><div class="description floatright"><h2>' + todaysDeals[i].adTitle + '<h2>');
+      $(".ad-" + i + " .foot .description").append('<p>' + todaysDeals[i].adDescription + '</p>');
+      $(".ad-" + i + " .contactinfo").append('<p>Company name:' + todaysDeals[i].adCompany + '</p><p>Contact Number:' + todaysDeals[i].adPhone + '</p><p>Location:' + todaysDeals[i].adAddress + '</p><p>Website:' + todaysDeals[i].adWebsite + '</p><p>Contact Email:' + todaysDeals[i].adEmail + '</p>');
+      $(".ad-" + i + " .socialbuttons").append('<button>Add to calendar</button><button>Save this deal</button><button>Map this location</button><button>Delete this deal</button>')
+      $(".ad-" + i + " .adMap").append('<div id=#map_canvas></div>')
   }
+
+// function initialize() {
+//         var map_canvas = document.getElementById('map_canvas');
+//         var map_options = {
+//           center: new google.maps.LatLng( todaysDeals[i].latitude, todaysDeals[i].longitude ),
+//           zoom: 8,
+//           mapTypeId: google.maps.MapTypeId.ROADMAP
+//         }
+//         var map = new google.maps.Map(map_canvas, map_options)
+//       }
+//       google.maps.event.addDomListener(window, 'load', initialize);
+
 }
 
+//Submit location
 
-$("#locationsubmitfield").click(function() {
+
+$("#locationsubmitfield").click(function refreshAds() {
 
 	var checkLocation = []
 	$("input[id='adDistrictCheck']:checked").each(function ()
@@ -151,19 +188,40 @@ $("#locationsubmitfield").click(function() {
 	    checkLocation.push($(this).val());
 	});
 
-	for (var i = 0; i < deals.length; i++) {
-		if ($(".head:contains('" + deals[i].district + "')")) {
-			$(".ad").show()
-		} else {
-			$(".ad").remove()
-		};
+for (var i = 0; i < deals.length; i++) {
+	for (j = 0; j < checkLocation.length; j++) {
+		if (deals[i].district != checkLocation[j])
+			$(".ad-" + i).css("display","none")	;
 
-	};
+	}
+}
 
+	// for (var i = 0; i < deals.length; i++) {
+	// 	if (checkLocation[i] != deals[i].district) {
+	// 	$(".ad-" + i).css("display","none")	
+	// 	};
+	// };
+
+	$('.locationbar').slideToggle();
 		console.log(checkLocation)
 
 });
 
+//Clear location
+
+$("#locationclearfield").click(function() {
+
+	prepareAds();
+
+    $(".location_active input[type=checkbox]").each(function () {
+        $(this).attr("checked", false);
+        });
+
+	$('.locationbar').slideToggle();
+
+});
+
+//Create selection array for location
 
 $("#locationclearfield").click(function() {
 	$('#adDistrictCheck').find(':checked').each(function() {
@@ -191,6 +249,7 @@ function toggleDistrictsCheckBox(regionCheckboxId, locationListId) {
 
 
 
+
 // need JS to dynamically refresh the list based on selections made by user on category/location without page refresh
 
 
@@ -200,16 +259,6 @@ function toggleDistrictsCheckBox(regionCheckboxId, locationListId) {
 //need divs to open to include more information including a map etc.
 
 
-// function initialize() {
-//         var map_canvas = document.getElementById('map_canvas');
-//         var map_options = {
-//           center: new google.maps.LatLng(44.5403, -78.5463),
-//           zoom: 8,
-//           mapTypeId: google.maps.MapTypeId.ROADMAP
-//         }
-//         var map = new google.maps.Map(map_canvas, map_options)
-//       }
-//       google.maps.event.addDomListener(window, 'load', initialize);
 
 
 

@@ -237,11 +237,6 @@ body {background: url(../images/bg_head.jpg) repeat;
 			height: 620px;
 	}
 
-		.content {box-sizing: border-box;
-				width: 32.9%;
-				margin:0.2%;
-				float: left;	
-		} 
 			.ad {border: 1px solid #fff;
 				-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 				-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
@@ -249,13 +244,15 @@ body {background: url(../images/bg_head.jpg) repeat;
 				-webkit-border-radius: 3px;
 				-moz-border-radius: 3px;
 				border-radius: 3px;
-				width: 100%;
-				margin-bottom: 4px;
+				width: 32.9%;
+				margin:0.2%;
+				box-sizing: border-box;
+				float: left;
 			}
 
-				.ad:hover {
+/*				.ad:hover {
 					opacity: 0.5;
-				}
+				}*/
 
 				.ad .head {background-color: black;
 					color: white;
@@ -305,7 +302,7 @@ body {background: url(../images/bg_head.jpg) repeat;
 
 					.ad .foot .description {
 						background-color: white;
-						width: 79%;
+						width: 75%;
 					}
 
 						.ad .foot .description h2{
@@ -319,6 +316,18 @@ body {background: url(../images/bg_head.jpg) repeat;
 							padding: 5px;
 							margin: 0;
 							font-size: 10px;
+						}
+
+						.ad .contactinfo{
+							display: none;
+						}
+
+						.ad .socialbuttons{
+							display: none;
+						}
+						
+						.ad .adMap{
+							display: none;
 						}
 
 
@@ -429,7 +438,7 @@ body {background: url(../images/bg_head.jpg) repeat;
 		margin-right: 132px;
 	}
 
-	.content {width: 49.6%
+	.ad {width: 49.6%
 
 	}
 
@@ -463,11 +472,11 @@ body {background: url(../images/bg_head.jpg) repeat;
 
 	.datescroll h1 { 
 		line-height: 40px;    
-		font-size: 22px;
+		font-size: 20px;
 
 	}
 
-		.content {width: 99.8%;
+		.ad {width: 99.8%;
 		}
 
 }

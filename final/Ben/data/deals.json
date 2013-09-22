@@ -72,6 +72,30 @@ var deals = [
     },
 
     {
+        "id": 3,
+        "adSize": "mini",
+        "priority": "01",   
+        "adCompany": "Carnegies",
+        "logoImg": "http://placehold.it/60x60/292929/E8117F",
+        "weekDay": "Tuesday",
+        "mainImg": "http://placehold.it/320x200/92C5DF/000000",
+        "adTitle": "Ipsum lorem boredum",
+        "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
+        "validFrom": "Wed Sep 11 2013",
+        "validTo": "Wed Oct 16 2013",
+        "like": 100,
+        "dislike": 20,
+        "adPhone": "+1 (937) 569-3407",
+        "adAddress": "459 Lacon Court, Wilsonia, Massachusetts, 1662",
+        "adWebsite": "hello@carnegies.com",
+        "latitude": 17.469715,
+        "longitude": -39.689142,
+        "region": "Hong Kong Island",
+        "district": "North Point",
+        "category": "Dining"
+    },
+
+    {
         "id": 4,
         "adSize": "midi",
         "priority": "01",   
@@ -668,30 +692,6 @@ var deals = [
         "longitude": -39.689142,
         "region": "Hong Kong Island",
         "district": "Central",
-        "category": "Dining"
-    },
-
-    {
-        "id": 28,
-        "adSize": "mini",
-        "priority": "01",   
-        "adCompany": "Carnegies",
-        "logoImg": "http://placehold.it/60x60/292929/E8117F",
-        "weekDay": "Tuesday",
-        "mainImg": "http://placehold.it/320x200/92C5DF/000000",
-        "adTitle": "Ipsum lorem boredum",
-        "adDescription": "Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum Ipsum lorem boredum.",
-        "validFrom": "Wed Sep 11 2013",
-        "validTo": "Wed Oct 16 2013",
-        "like": 100,
-        "dislike": 20,
-        "adPhone": "+1 (937) 569-3407",
-        "adAddress": "459 Lacon Court, Wilsonia, Massachusetts, 1662",
-        "adWebsite": "hello@carnegies.com",
-        "latitude": 17.469715,
-        "longitude": -39.689142,
-        "region": "Hong Kong Island",
-        "district": "North Point",
         "category": "Dining"
     },
 

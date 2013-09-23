@@ -233,8 +233,9 @@ body {background: url(../images/bg_head.jpg) repeat;
 			}
 
 	.contentwrapper {
-			overflow:hidden;
+			overflow: hidden;
 			height: 620px;
+			z-index: -1;
 	}
 
 			.ad {border: 1px solid #fff;
@@ -250,9 +251,9 @@ body {background: url(../images/bg_head.jpg) repeat;
 				float: left;
 			}
 
-/*				.ad:hover {
+				.ad:hover {
 					opacity: 0.5;
-				}*/
+				}
 
 				.ad .head {background-color: black;
 					color: white;

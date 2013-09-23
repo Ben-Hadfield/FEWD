@@ -167,6 +167,16 @@ function prepareAds() {
       // $(".ad-" + i + " .adMap").append('<div id=#map_canvas></div>')
   }
 
+	// //Initialize Masonry
+	// $('.contentwrapper').masonry({
+	// 	columnWidth: 320,
+	// 	itemSelector: '.ad',
+	// 	isFitWidth: true,
+	// 	//isAnimated: !Modernizr.csstransitions
+	// }).imagesLoaded(function() {
+	// 	$(this).masonry('reload');
+	// });
+
   filterLocation()
 
 }
@@ -183,10 +193,14 @@ function filterLocation(){
 	for (var i = 0; i < deals.length; i++) {
 		if (checkLocation.indexOf(deals[i].district) == -1) {
 			$("#ad-" + i).hide();
+			// $('.contentwrapper').masonry('remove', $("#ad-" + i)).masonry();
 		} else {
 			$("#ad-" + i).show();
 		}
 	}
+
+	// $('.contentwrapper').masonry('reloadItems')
+
 }
 
 
@@ -212,11 +226,11 @@ $("#locationclearfield").click(function() {
 
 // 7.2 Create selection array for location
 
-$("#locationclearfield").click(function() {
-	$('#adDistrictCheck').find(':checked').each(function() {
-   		$(this).removeAttr(':checked');
-   	});
-});
+// $("#locationclearfield").click(function() {
+// 	$('#adDistrictCheck').find(':checked').each(function() {
+//    		$(this).removeAttr(':checked');
+//    	});
+// });
 
 
 //  7.3 Region checkboxes
@@ -246,9 +260,9 @@ function toggleDistrictsCheckBox(regionCheckboxId, locationListId) {
 
 // need to be able to swipe or close divs that will be replaced by divs below it and lazy load them as well
 
-$('#mapDeal').click(function() {
-	$('contentwrapper').html('<div id=#map_canvas></div>')
-});
+// $('#mapDeal').click(function() {
+// 	$('contentwrapper').html('<div id=#map_canvas></div>')
+// });
 
 // function initialize() {
 //         var map_canvas = document.getElementById('map_canvas');
@@ -268,11 +282,6 @@ $('#mapDeal').click(function() {
 
 
 // Masonry
-
-// $('.contentwrapper').masonry({
-//   columnWidth: 200,
-//   itemSelector: '.ad'
-// });
 
 
 

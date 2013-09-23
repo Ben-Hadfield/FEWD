@@ -137,8 +137,6 @@ $(".arrowright, .arrowleft").click(function() {
 	}
 
 	prepareAds();
-	refreshAds();
-
 });
 
 // 6. Prepare Ads
@@ -158,7 +156,7 @@ function prepareAds() {
 	$(".contentwrapper").html('');
 
     for (var i = 0; i < todaysDeals.length; i++) {
-      $(".contentwrapper").prepend('<div class="ad ad-' + i + ' ' + todaysDeals[i].adSize + '"></div>');
+      $(".contentwrapper").prepend('<div id ="ad-' + todaysDeals[i].id + '" class="ad ad-' + i + ' ' + todaysDeals[i].adSize + '"></div>');
       $(".ad-" + i).html('<div class="head"></div><div class="promopic"></div><div class="foot"></div><div class="contactinfo"></div><div class="socialbuttons"></div><div class="adMap"></div>');
       $(".ad-" + i + " .head").html('<div class="floatleft"><p>' + todaysDeals[i].category + '</p></div><div class="districtDeal floatright"><p>' + todaysDeals[i].district + '</p></div>');
       $(".ad-" + i + " .promopic").html('<img src=' + todaysDeals[i].mainImg + '>');
@@ -169,7 +167,7 @@ function prepareAds() {
       // $(".ad-" + i + " .adMap").append('<div id=#map_canvas></div>')
   }
 
-
+  filterLocation()
 
 }
 
@@ -177,32 +175,24 @@ function prepareAds() {
 // 
 //
 
-
-$("#locationsubmitfield").click(function() {
-
+function filterLocation(){
 	var checkLocation = []
-	$("input[id='adDistrictCheck']:checked").each(function ()
-	{
+	$("input[id='adDistrictCheck']:checked").each(function(){
 	    checkLocation.push($(this).val());
 	});
-
-for (var i = 0; i < deals.length; i++) {
-	for (j = 0; j < checkLocation.length; j++) {
-		if (deals[i] === checkLocation[j])
-			$(".ad-" + i).css("display","none")	;
-
+	for (var i = 0; i < deals.length; i++) {
+		if (checkLocation.indexOf(deals[i].district) == -1) {
+			$("#ad-" + i).hide();
+		} else {
+			$("#ad-" + i).show();
+		}
 	}
 }
 
-	// for (var i = 0; i < deals.length; i++) {
-	// 	if (checkLocation[i] != deals[i].district) {
-	// 	$(".ad-" + i).css("display","none")	
-	// 	};
-	// };
 
+$("#locationsubmitfield").on('click', function() {
+	filterLocation()
 	$('.locationbar').slideToggle();
-		console.log(checkLocation)
-
 });
 
 // 7.1 Clear location

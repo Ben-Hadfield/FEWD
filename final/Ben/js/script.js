@@ -203,7 +203,7 @@ $("#locationclearfield").click(function() {
 	prepareAds();
 
     $(".location_active input[type=checkbox]").each(function () {
-        $(this).attr("checked", false);
+        $(this).attr("checked", true);
         });
 
 	$('.locationbar').slideToggle();
